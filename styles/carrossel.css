@@ -134,3 +134,35 @@
     flex-shrink: 0;
     width: auto;
   }
+
+  @media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 24px; 
+     }
+     .swiper-pagination {
+        position: initial;
+        padding: 1.5em;
+        margin: 0.5em 0;
+    }
+    .swiper {
+        width: 70%;
+    }
+    .swiper-button-prev , .swiper-button-next {
+        display: block;
+        padding: 2.2em 0em;
+    }
+    .card {
+        margin: 3em 12em 3em 12em;
+        padding: 1em;
+    }
+
+    .carrossel__titulo-secundario {
+        font-size: 26px;
+    }
+
+    .card-secundario {
+        margin: 3em 12em 3em 12em;
+        padding: 1em;
+
+    }
+  }
