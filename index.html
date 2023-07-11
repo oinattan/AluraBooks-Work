@@ -54,7 +54,7 @@
         </li>
       </label>
 
-    <ul class="navbar__lista-menu">
+    <ul class="navbar__lista-menu, navbar__lista-desktop">
       <li class="lista-menu__item">
         <div class="lista-menu__link">
         <a href="#" class="menu-container">PROGRAMAÇÃO</a>
@@ -92,8 +92,12 @@
   
     <div class="container">
       <a href="#"><img src="/assets/Favoritos.svg" class="container__imagem navbar__meus-favoritos" alt="Meus Favoritos"></a>
-      <a href="#"><img src="/assets/Sacola.svg" class="container__imagem" alt="Minhas Compras"></a>
-      <a href="#"><img src="/assets/Usuário.svg" class="container__imagem" alt="Meeu Perfil"> </a>
+      <a href="#" class="container__navbar"><img src="/assets/Sacola.svg" class="container__imagem" alt="Minhas Compras">
+        <p class="container__texto">Minhas Compras</p>
+      </a>
+      <a href="#" class="container__navbar"><img src="/assets/Usuário.svg" class="container__imagem" alt="Meu Perfil">
+        <p class="container__texto">Meu Perfil</p>
+      </a>
          </div>
     </header>
     <section class="banner">
@@ -122,7 +126,8 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
-
+  
+  <div class="card__home-page">
   <div class="card">
     <div class="card__descricao">
         <div class="descricao">
@@ -140,7 +145,24 @@
         <a href="#" class="botoes__ancora">Saiba Mais</a>
     </div>
   </div>
-
+  <div class="card__home-dois">
+    <div class="card__descricao">
+        <div class="descricao">
+            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descricao__titulo-livro" >Angular 11 e Firebase</h2>
+            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        </div>
+        <img src="assets/Angular.svg " alt="Livro sobre Angular" class="descricao__imagem">
+    </div>
+    <div class="card__botoes">
+        <ul class="botoes">
+        <li class="botoes__item"> <img src="assets/Favoritos.svg" alt="Favoritar"> </li>
+        <li class="botoes__item"> <img src="/assets/Sacola.svg" alt="Comprar"> </li>
+    </ul>
+        <a href="#" class="botoes__ancora">Saiba Mais</a>
+    </div>
+  </div>
+</div>
     </section>
 
     <section class="carrossel__secundario"> 
@@ -183,9 +205,9 @@
             <img src="assets/Estrelinhas.svg" alt="Autora dos Livros" class="imagem__secundaria">
             <h3 class="descricao__titulo-secundario">Autora do Mês</h3>
             <h2 class="descricao__titulo-livro-secundario" >Juliana Agarikov</h2>
-            <p class="descricao__texto-secundario">Analista de sistemas e escritora, Juliana é especialista em <br>Front-End. </p>
+            <p class="descricao__texto-secundario">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
         </div>
-        <img src="assets/Escritora.svg " alt="Autora dos Livros" class="descricao__imagem">
+        <img src="assets/Escritora.svg " alt="Autora dos Livros" class="imagem__card-dois">
     </div>
     <div class="card__botoes">
         <ul class="botoes">
@@ -281,7 +303,7 @@
 
     <script>
       const categoriaContainer = document.querySelector('.categoria-container');
-      const listaMenu = document.querySelector('.navbar__lista-menu');
+      const listaMenu = document.querySelector('.navbar__lista-desktop');
     
       categoriaContainer.addEventListener('mouseenter', function() {
         listaMenu.style.display = 'block';
